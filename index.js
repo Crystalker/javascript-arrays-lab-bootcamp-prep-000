@@ -18,8 +18,19 @@ function destructivelyRemoveFirstKitten() {
   return kittens;
 }
 
+function appendKitten(name) {
+  return [...kitten, name];
+}
 
+function prependKitten(name) {
+  return [name, ...kitten]
+}
 
+function removeLastKitten() {
+  
+}
 
-
-
+function removeFirstKitten() {
+  let newArray = [...kitten]
+  return newArray.slice(1);
+}
